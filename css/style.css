@@ -1,0 +1,28 @@
+.gridwrapper {
+    display: grid;
+    grid-template-areas: 
+    "he he"
+    "na na"
+    "ma ma";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 3fr;
+}
+
+#header {
+    display: flex;
+    grid-area: he;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav {
+    grid-area: na;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: ma;
+}
+
