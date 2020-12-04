@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 .gridwrapper {
     display: grid;
     grid-template-areas: 
@@ -5,7 +11,7 @@
     "na na"
     "ma ma";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr 3fr;
+    grid-template-rows: 200px 75px 100%;
 }
 
 #header {
@@ -13,10 +19,13 @@
     grid-area: he;
     justify-content: center;
     align-items: center;
+    background-color: grey;
 }
+
 
 #nav {
     grid-area: na;
+    background-color: black;
 }
 
 #main {
@@ -24,5 +33,75 @@
     justify-content: center;
     align-items: center;
     grid-area: ma;
+    background-image: url("../img/baguette.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
+.meny {
+    font-size: 80px;
+    text-decoration: none;
+    color: white;
+}
+
+.meny:hover {
+    color: grey;
+}
+
+.meny_system_list {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.meny_link {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.meny_link:hover {
+    color: grey;
+}
+
+    /* css för "kontakta oss" sidan */
+
+#innergrid_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: ma;
+}
+
+.contact {
+    display: flex;
+    padding: 30px;
+    margin: 60px;
+    height: 400px;
+    width: 800px;
+    background-color: aqua;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 30px;
+}
+
+
+
+#meny_meals {
+    display: flex;
+    padding: 30px;
+    margin: 60px;
+    height: 400px;
+    width: 800px;
+    background-color: aqua; 
+}
+
+.meal1 {
+    display: flex;
+    background-image: url(../img/meal1.jpg);
+    background-position: left;
+    background-size: 500px;
+}
