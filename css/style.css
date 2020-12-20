@@ -14,18 +14,29 @@
     grid-template-rows: 200px 75px 100%;
 }
 
+
 #header {
     display: flex;
     grid-area: he;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+}
+
+.logo {
+    display: flex;
+    background-image: url(../misc/logo.jpg);
+    background-position: center;
+    background-size: 100%;
+    padding: 30px;
+    margin: 60px;
+    height: 150px;
+    width: 400px;
 }
 
 
 #nav {
     grid-area: na;
-    background-color: black;
+    background-color: grey;
 }
 
 #main {
@@ -45,7 +56,7 @@
 }
 
 .meny:hover {
-    color: grey;
+    color: black;
 }
 
 .meny_system_list {
@@ -63,7 +74,7 @@
 }
 
 .meny_link:hover {
-    color: grey;
+    color: black;
 }
 
     /* css för "kontakta oss" sidan */
@@ -81,27 +92,27 @@
     margin: 60px;
     height: 400px;
     width: 800px;
-    background-color: aqua;
+    background-color: grey;
     flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
     font-size: 30px;
 }
 
+/* css för "meny" sidan */
 
-
-#meny_meals {
+.meny_meals {
     display: flex;
     padding: 30px;
     margin: 60px;
     height: 400px;
     width: 800px;
-    background-color: aqua; 
+    background-color: grey; 
 }
 
-.meal1 {
+.meals {
     display: flex;
-    background-image: url(../img/meal1.jpg);
-    background-position: left;
-    background-size: 500px;
+    height: 100%;
+    width: 50%;
+    margin-right: 10px;
 }
